@@ -9,6 +9,7 @@ import android.os.Environment;
 import android.util.Log;
 
 import com.wenming.library.LogReport;
+import com.wenming.library.constants.Constants;
 import com.wenming.library.encryption.IEncryption;
 import com.wenming.library.util.FileUtil;
 import com.wenming.library.util.LogUtil;
@@ -44,7 +45,7 @@ public abstract class BaseSaver implements ISave {
     /**
      * 在每一条log前面增加一个时间戳
      */
-    public final static SimpleDateFormat yyyy_MM_dd_HH_mm_ss_SS = new SimpleDateFormat("yyyy-MM-dd_HHmmss.SS", Locale.getDefault());
+    public final static SimpleDateFormat yyyy_MM_dd_HH_mm_ss_SS = new SimpleDateFormat(Constants.YYYY_MM_DD_HHMMSS_SS, Locale.getDefault());
 
 
     /**

@@ -4,6 +4,7 @@ import android.app.IntentService;
 import android.content.Intent;
 
 import com.wenming.library.LogReport;
+import com.wenming.library.constants.Constants;
 import com.wenming.library.util.CompressUtil;
 import com.wenming.library.util.FileUtil;
 import com.wenming.library.util.LogUtil;
@@ -24,7 +25,7 @@ public class UploadService extends IntentService {
     /**
      * 压缩包名称的一部分：时间戳
      */
-    public final static SimpleDateFormat ZIP_FOLDER_TIME_FORMAT = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss:SS", Locale.getDefault());
+    public final static SimpleDateFormat ZIP_FOLDER_TIME_FORMAT = new SimpleDateFormat(Constants.YYYY_MM_DD_HHMMSS_SS, Locale.getDefault());
 
     /**
      * Creates an IntentService.  Invoked by your subclass's constructor.
