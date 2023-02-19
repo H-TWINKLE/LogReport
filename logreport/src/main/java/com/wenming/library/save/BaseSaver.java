@@ -44,7 +44,7 @@ public abstract class BaseSaver implements ISave {
     /**
      * 在每一条log前面增加一个时间戳
      */
-    public final static SimpleDateFormat yyyy_MM_dd_HH_mm_ss_SS = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss:SS", Locale.getDefault());
+    public final static SimpleDateFormat yyyy_MM_dd_HH_mm_ss_SS = new SimpleDateFormat("yyyy-MM-dd_HHmmss.SS", Locale.getDefault());
 
 
     /**
